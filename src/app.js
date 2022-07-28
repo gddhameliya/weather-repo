@@ -6,15 +6,15 @@ app.set("view engine", "ejs");
 app.use(express.static(process.cwd() + "/public"));
 
 app.get("/", (req, res) => {
-    res.render("index", { title: "Weather app", name: "Harsh Dobariya" });
+    res.render("index", { title: "Weather app", name: "Gaurang Dhameliya" });
 });
 
 app.get("/about", (req, res) => {
-    res.render("about", { title: "About me", name: "Harsh Dobariya" });
+    res.render("about", { title: "About me", name: "Gaurang Dhameliya" });
 });
 
 app.get("/help", (req, res) => {
-    res.render("help", { title: "Help", name: "Harsh Dobariya" });
+    res.render("help", { title: "Help", name: "Gaurang Dhameliya" });
 });
 
 app.get("/weather", (req, res) => {
@@ -30,11 +30,11 @@ app.get("/weather", (req, res) => {
 });
 
 app.get("/help/*", (req, res) => {
-    res.render("404", { title: "404", name: "Harsh Dobariya", message: "Help article not found." });
+    res.render("404", { title: "404", name: "Gaurang Dhameliya", message: "Help article not found." });
 });
 
 app.get("*", (req, res) => {
-    res.render("404", { title: "404", name: "Harsh Dobariya", message: "Page not found." });
+    res.render("404", { title: "404", name: "Gaurang Dhameliya", message: "Page not found." });
 });
 
 const port = process.env.PORT || 5000;
